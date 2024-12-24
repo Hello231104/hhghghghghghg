@@ -1,0 +1,102 @@
+#product-image {
+    object-fit: cover;
+    height: 500px;
+    border-radius: 8px;
+    max-width:350px;
+    max-height: 500px;
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px 15px 15px 15px;
+    text-align: center;
+    overflow: hidden;
+}
+#product-name{
+    font-size:40px;
+}
+.detail-container{
+    
+    margin-top: 1%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:900px;
+    display:flex;
+}
+.des-container{
+    
+    margin-top:1%;
+    margin-left:auto;   
+    margin-right:auto;
+    max-width:900px; 
+    margin-bottom:50px;
+}
+.second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đảm bảo các phần tử phân bố đều */
+    height: 100%; /* Đảm bảo container chiếm đủ chiều cao */
+    margin: 15px 15px 15px 15px;
+    width:100%;
+}
+  
+  .check-branch-btn {
+    margin-top: auto; /* Đẩy nút xuống cuối */
+  }
+.des{
+    margin: 15px 15px 15px 15px;
+}
+table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black; /* Viền đen */
+    width: 200px; /* Chiều rộng mỗi ô */
+    text-align: left; /* Canh giữa nội dung trong ô */
+    padding: 8px; 
+  }
+  td:first-child, th:first-child {
+    font-weight: bold; /* In đậm chữ trong cột đầu tiên */
+  }
+
+  #product-description{
+    font-size:15px;
+  }
+  #product-description-detail{
+    font-size:18px;
+  }
+  #product-price{
+    margin-top:30px;
+    font-size:30px;
+    font-weight:bold;
+
+  }
+
+  .check-branch-btn {
+    margin-top:25px;
+    background-color: orange; /* Màu cam */
+    color: white; /* Chữ màu trắng */
+    border: none; /* Không có viền */
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Khi di chuột sẽ hiển thị dấu tay */
+    border-radius: 5px; /* Bo tròn các góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi di chuột */
+  }
+  
+  @media (max-width: 1000px) {
+    .check-branch-btn{
+        margin-top:-10px;
+    }
+    #product-price{
+        margin-top:0px;
+    }
+    .des-container{
+        margin-bottom:1000px;
+    }
+  }
+  .check-branch-btn:hover {
+    background-color: darkorange; /* Màu cam đậm khi di chuột vào */
+  }
+  

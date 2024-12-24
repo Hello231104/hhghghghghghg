@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function loadHTML(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the file:', error));
+        }
+
+        loadHTML('bodytrang', 'body.html');
+        loadHTML('footertrang','footer.html')
+        loadHTML('headertrang', 'header.html');
+        
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/style.css">
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/chitietsp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.13/antd.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="/btcuoikitkeweb/js/chitiet.js"></script>
+</head>
+<body>
+    <header>
+        <div id="headertrang"></div>
+    </header>
+   
+<div class="detail-container">
+    <div>
+        <img id="product-image" src="" alt="Product Image">
+    </div>
+    <div class="second-container">
+        <h1 id="product-name"></h1>
+        <h2>Thông tin sản phẩm</h2>
+        <table>
+            <tr><td>Tình trạng: </td><td>Còn hàng</td></tr>
+            <tr><td>Ngày mở bán </td><td>26/12/2024</td></tr>
+            <tr><td>Nhà sản xuất: </td><td id="product-nsx"></td></tr>
+            <tr><td>Phân loại: </td><td id="product-type"></td></tr>
+            
+            <tr><td>Kích thước: </td><td id="product-size"></td></tr>
+        </table>
+        
+        <p id="product-price"></p>
+        <button class="check-branch-btn" onclick="showBranche()">Xem chi nhánh còn hàng</button>
+    </div>
+</div>
+    <div class="des-container">
+        <div class="des">
+            
+        <p id="product-description"></p>
+        <h2>Mô tả:</h2>
+        <p id="product-description-detail"></p>
+        </div>
+    </div>
+
+
+    
+    <div id="footertrang"></div>
+
+    <script>
+        // Lấy dữ liệu từ localStorage
+        const detailData = JSON.parse(localStorage.getItem('productDetail'));
+        
+        // Hiển thị dữ liệu trên trang
+        if (detailData) {
+            document.getElementById('product-image').src = detailData.image;
+            document.getElementById('product-name').textContent = detailData.name;
+            document.getElementById('product-price').textContent = detailData.price;
+            document.getElementById('product-description').textContent = detailData.description;
+            document.getElementById('product-description-detail').textContent=detailData.descriptiondetail;
+            document.getElementById('product-size').textContent= detailData.size;
+            document.getElementById('product-nsx').textContent= detailData.nsx;
+            document.getElementById('product-type').textContent=detailData.type;
+        }
+    </script>
+</body>
+</html>

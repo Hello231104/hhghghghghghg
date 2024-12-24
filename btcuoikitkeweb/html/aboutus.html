@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/style.css">
+
+    
+    <script src="/btcuoikitkeweb/js/index.js"></script>
+    <script>
+        function loadHTML(elementId, filePath) {
+        fetch(filePath)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
+    }
+
+    loadHTML('bodytrang', 'body.html');
+    loadHTML('footertrang','footer.html')
+    loadHTML('headertrang', 'header.html');
+    </script>
+
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/aboutus.css">
+</head>
+<body>
+   
+
+
+
+    <div class="container_1">
+        <div id="gioithieu">
+            <h1>Chào bạn, 
+            <br>
+            Chúng mình là CUBING CLUB
+        </h1>
+        <div id="gioithieu2">
+            CUBING CLUB, một cửa hàng đồ chơi thông minh tại Hà Nội, chuyên cung cấp các sản phẩm Rubik, các phụ kiện liên quan như: dầu bôi trơn (lube), nam châm, đồng hồ bấm giờ, v.v. Ngoài ra shop còn kinh doanh cả boardgame, mô hình lắp ghép cùng một số loại đồ chơi trí tuệ đang nổi khác.
+        </div>
+        <a href="index.html" id="button1_aboutus">
+            <div class="nutkhampha">
+                KHÁM PHÁ NGAY
+            </div>
+        </a>
+    </div>
+        
+        <img src="/btcuoikitkeweb/pictures/Screenshot1.png"></img>
+    </div>
+
+    <div class="container_2">
+
+        <img src="/btcuoikitkeweb/pictures/Screenshot2.png">
+
+
+        <div id="nhiemvu">
+            <h1>Nhiệm vụ</h1>
+            <h3 >
+                Trong bối cảnh bộ môn Speedcubing ngày càng phát triển và lớn mạnh vào khoảng đầu những năm 2011 tại Việt Nam, nhu cầu của người chơi cũng càng trở nên lớn và đa dạng hơn.
+            </h3>
+            <h2 >
+                Lý do ra đời
+            </h2>
+            <h3  >
+                Trong khi đó, các cửa hàng tại Việt Nam vẫn còn thưa thớt và gây khó khăn trong việc tiếp cận những sản phẩm mới của các cuber.
+                 Vì vậy, cái tên "CUBING CLUB" được sáng lập nhằm cung cấp tổng hợp các sản phẩm dịch vụ,
+                 xuất phát từ nhu cầu của thị trường và niềm đam mê Rubik của anh Lưu Hoàng Sang.
+            </h3>
+
+            <h2>
+                Mong muốn
+            </h2>
+            <h3>
+                Mong muốn của CUBING CLUB khi kinh doanh đó là cung cấp những sản phẩm chất lượng tốt nhất thông qua 
+                việc tuyển chọn các nhà đối tác nổi tiếng trên thế giới,
+                 cho bạn lời khuyên phù hợp và đặc biệt là góp phần phát triển cho cộng đồng speedcubing tại Việt Nam.
+            </h3>
+        </div>
+    </div>
+
+    <div class="container_3">
+        <img src="/btcuoikitkeweb/pictures/Screenshot3.png" alt="">
+    </div>
+    
+<div style="width: 100%; height: 400px; border: none;">
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5884919834307!2d105.82623827503086!3d21.009126380635358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2zSOG7jWMgVmnhu4duIE5nw6JuIEjDoG5n!5e0!3m2!1svi!2s!4v1735012746511!5m2!1svi!2s" 
+    width="100%" height="450" 
+    style="border:0;" 
+    allowfullscreen="" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+   
+</body>
+</html>

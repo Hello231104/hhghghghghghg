@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/style.css">
+    
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/sanpham.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.13/antd.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="/btcuoikitkeweb/js/chitiet.js"></script>
+
+    <script src="/btcuoikitkeweb/js/chitiet.js"></script>
+    <script>
+    function loadHTML(elementId, filePath) {
+        fetch(filePath)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
+    }
+
+    loadHTML('bodytrang', 'body.html');
+    loadHTML('footertrang','footer.html')
+    loadHTML('headertrang', 'header.html');
+</script>
+</head>
+<body>
+   <header> 
+    <div id="headertrang"></div>
+</header>
+
+<div>    
+    <div class="marquee">
+    <div class="marquee-content2">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/speed.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:400px">SPEED CUBE</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/speed.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:400px">SPEED CUBE</div>
+        
+    </div>
+    <div class="marquee-content2">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/speed.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:400px">SPEED CUBE</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/speed.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:400px">SPEED CUBE</div>
+        
+    </div>
+    <div class="marquee-content2">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/speed.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:400px">SPEED CUBE</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/speed.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:400px">SPEED CUBE</div>
+        
+    </div>
+    <div class="marquee-content2">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/speed.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:400px">SPEED CUBE</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/speed.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:400px">SPEED CUBE</div>
+        
+    </div>
+</div>
+</div>
+
+<div class="list">
+    <div class="pricing-container">
+        <div class="pricing-card"
+        data-name="Rubik AOSHI 6x6 M" 
+        data-price="$35.99" 
+        data-description="Được trang bị hơn 140 nam châm, khả năng cắt góc tuyệt vời, cơ chế chống kẹt cải tiến" 
+        data-description-detail="MoYu AoShi 6x6 WR M là sản phẩm mới nhất trong dòng WR từ MoYu. 
+        Khối rubik này được trang bị hơn 140 nam châm, khả năng cắt góc tuyệt vời, cơ chế chống kẹt cải tiến và nhiều tính năng nổi bật khác! 
+        Nếu bạn yêu thích giải rubik 6x6 hoặc chỉ đơn giản là tò mò, AoShi WR M chắc chắn là một lựa chọn tuyệt vời!"
+        data-image="/productPics/AOSHI6x6.png"
+        data-size="63mm*63mm*63mm"
+        data-nsx="Moyu"
+        data-type="6x6x6"
+        onclick="goToDetailPage(this)"
+        >
+            
+            <div class="the_che"></div>
+            <img src="/productPics/AOSHI6x6.png" alt="Standard T-Shirt">
+            <div class="content">
+                <h2>Rubik A0SHI 6x6 M</h2>
+                <p class="price">$35.99</p>
+                <p class="description">Được trang bị hơn 140 nam châm, khả năng cắt góc tuyệt vời, cơ chế chống kẹt cải tiến </p>
+                <button class="btn-buy">Chi tiết</button>
+            </div>
+        </div>
+        </div>
+    <div class="pricing-container">
+            <div class="pricing-card"
+        data-name="RS2M Evolution 2x2" 
+        data-price="$9.99" 
+        data-description="Phiên bản nâng cấp đáng giá từ RS2 M." 
+        data-description-detail="RS2 M Evolution là phiên bản nâng cấp từ RS2 M. Thiết kế mới này có hệ thống căng/nén điều chỉnh kép,
+         cơ chế được nâng cấp với các tính năng chống bung (anti-pop) tốt hơn và các khe cắm nam châm để đảm bảo chúng luôn thẳng hàng."
+        data-image="/productPics/RS2M2x2.png"
+        data-size="50mm*50mm*50mm"
+        data-nsx="Moyu"
+        data-type="2x2x2"
+        onclick="goToDetailPage(this)">
+                <div class="the_che"></div>
+                <img src="/productPics/RS2M2x2.png" alt="Standard T-Shirt">
+                <div class="content">
+                    <h2>RS2M Evolution 2x2</h2>
+                    <p class="price">$9.99</p>
+                    <p class="description">Phiên bản nâng cấp đáng giá từ RS2 M.</p>
+                    <button class="btn-buy">Chi tiết</button>
+                </div>
+            </div>
+            </div>
+    <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Gan 356M 3x3" 
+                data-price="55.99$" 
+                data-description="Khối rubik cao cấp mới nhất trong phân khúc 3x3 được hãng GAN giới thiệu" 
+                data-description-detail="Rubik GAN 356 M 3X3 là khối rubik cao cấp mới nhất trong phân khúc 3x3 được hãng GAN giới thiệu. Phiên bản này đi kèm với lõi IPG Numerical điều chỉnh tay kép độc đáo. Thật dễ dàng để cảm thấy tốc độ cải thiện rõ rệt. Khối rubik GAN 356 M có thể điều chỉnh độ kín tùy theo sở thích riêng của mình để có được cảm giác phù hợp hơn khi chơi tốc độ" 
+                data-image="/productPics/GAN3x3.png" 
+                data-size="56mm*56mm*56mm" 
+                data-nsx="Gan"
+                data-type="3x3x3"
+        onclick="goToDetailPage(this)">
+                    <div class="the_che"></div>
+                    <img src="/productPics/GAN3x3.png" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Gan 356M 3x3</h2>
+                        <p class="price">$55.99</p>
+                        <p class="description">Khối rubik cao cấp mới nhất trong phân khúc 3x3 được hãng GAN giới thiệu</p>
+                        <button class="btn-buy">Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Cubicle labs Wuque 4x4" 
+     data-price="53.99$" 
+     data-description="Sản phẩm 4x4 mới nhất vừa ra mắt trên thị trường." 
+     data-description-detail="QiYi MoFangGe WuQue 4x4 là sản phẩm 4x4 mới nhất vừa ra mắt trên thị trường. Với kích thước 62mm và trọng lượng chỉ 124 gram đối với phiên bản sticker, WuQue nhẹ hơn đáng kể so với các mẫu 4x4 phổ biến khác cùng kích thước. Sản phẩm này được thiết kế với nhiều cải tiến nhằm biến WuQue trở thành một trong những khối 4x4 hàng đầu trên thị trường, và phiên bản thử nghiệm trước khi phát hành đã được sử dụng để thiết lập kỷ lục châu Á mới." 
+     data-image="/productPics/WUQUE4x4.png" 
+     data-size="62mm*62mm*62mm" 
+     data-nsx="Qiyi"
+     data-type="4x4x4"
+        onclick="goToDetailPage(this)">
+                    <div class="the_che"></div>
+                    <img src="/productPics/WUQUE4x4.png" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Cubicle labs Wuque 4x4</h2>
+                        <p class="price">$53.99</p>
+                        <p class="description">Sản phẩm 4x4 mới nhất vừa ra mắt trên thị trường.</p>
+                        <button class="btn-buy">Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Weilong 5x5 M" 
+                data-price="12.99$" 
+                data-description="Hiệu suất vượt trội và cảm giác nam châm" 
+                data-description-detail="MeiLong 5x5 M là một lựa chọn tuyệt vời cho bất kỳ ai quan tâm đến rubik tốc độ có nam châm, mang lại hiệu suất vượt trội và cảm giác nam châm thỏa mãn với mức giá hợp lý. Được thiết kế bởi MoFang JiaoShi (MFJS), đây là một lựa chọn phổ biến cho cả người mới bắt đầu và những người chơi rubik có kinh nghiệm muốn mở rộng bộ sưu tập của mình mà không tốn quá nhiều chi phí." 
+                data-image="/productPics/WEILONG5x5.png" 
+                data-size="60mm*60mm*60mm" 
+                data-nsx="Moyu"
+                data-type="5x5x5"
+        onclick="goToDetailPage(this)">
+                    <div class="the_che"></div>
+                    <img src="/productPics/WEILONG5x5.png" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Weilong 5x5 M</h2>
+                        <p class="price">$12.99</p>
+                        <p class="description">Hiệu suất vượt trội và cảm giác nam châm</p>
+                        <button class="btn-buy">Chi tiết</button>
+                    </div>
+                </div>
+                </div>
+            <div class="pricing-container">
+                    <div class="pricing-card"
+                    data-name="Yuxin Black Kirin 7x7" 
+                    data-price="18.99$" 
+                    data-description="Có màu sắc sáng nổi bật không sử dụng sticker" 
+                    data-description-detail="YuXin Black Kirin 7x7 là một khối rubik không nam châm, rất phù hợp cho người mới bắt đầu hoặc những ai muốn thử sức với sự kiện này. Khối rubik có màu sắc sáng nổi bật không sử dụng sticker, giúp tăng độ bền và tuổi thọ!" 
+                    data-image="/productPics/YUXIN7x7.png" 
+                    data-size="69mm*69mm*69mm" 
+                    data-nsx="Yuxin"
+                    data-type="7x7x7"
+        onclick="goToDetailPage(this)">
+                        <div class="the_che"></div>
+                        <img src="/productPics/YUXIN7x7.png" alt="Standard T-Shirt">
+                        <div class="content">
+                            <h2>Yuxin Black Kirin 7x7</h2>
+                            <p class="price">18.99$</p>
+                            <p class="description">Có màu sắc sáng nổi bật không sử dụng sticker!</p>
+                            <button class="btn-buy">Chi tiết</button>
+                        </div>
+                    </div>
+                    </div>
+            <div class="pricing-container">
+                        <div class="pricing-card"
+                        data-name="Meilong Square-1" 
+     data-price="7.99$" 
+     data-description="Giá rẻ hiệu suất cao" 
+     data-description-detail="MeiLong Square-1 là một khối rubik Square-1 giá rẻ nhưng có hiệu suất cao từ MoFang JiaoShi. Khối rubik này có khả năng xoay mượt mà, nhanh chóng và màu sắc sáng nổi bật không dùng sticker." 
+     data-image="/productPics/MEILONGSQ-1.png" 
+     data-size="N/A" 
+     data-nsx="Moyu"
+     data-type="Square-1"
+        onclick="goToDetailPage(this)">
+                            <div class="the_che"></div>
+                            <img src="/productPics/MEILONGSQ-1.png" alt="Standard T-Shirt">
+                            <div class="content">
+                                <h2>Meilong Square-1</h2>
+                                <p class="price">7.99$</p>
+                                <p class="description">Giá rẻ hiệu suất cao</p>
+                                <button class="btn-buy">Chi tiết</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-container">
+                        <div class="pricing-card"
+                        data-name="Gan Pyraminx M" 
+     data-price="30.99$" 
+     data-description="Pyraminx đầu tiên trên thế giới được trang bị hệ thống định vị từ tính lõi-cạnh độc đáo" 
+     data-description-detail="GAN Pyraminx là một pyraminx mới đến từ nhà sản xuất rubik nổi tiếng GAN. Đây là pyraminx đầu tiên trên thế giới được trang bị hệ thống định vị từ tính lõi-cạnh độc đáo của GAN. Bên cạnh hệ thống từ tính hoàn toàn mới này, GAN Pyraminx còn có thiết kế tổ ong đặc trưng của GAN, mang lại trải nghiệm xoay mượt mà và thoải mái. Phiên bản Enhanced còn được bổ sung các đai ốc GES để tùy chỉnh độ đàn hồi và các mảnh nam châm từ nhà máy, giúp tạo cảm giác từ tính đồng đều hơn." 
+     data-image="/productPics/GANpyr.png" 
+     data-size="N/A" 
+     data-nsx="Gan"
+     data-type="Pyraminx"
+        onclick="goToDetailPage(this)">
+                            <div class="the_che"></div>
+                            <img src="/productPics/GANpyr.png" alt="Standard T-Shirt">
+                            <div class="content">
+                                <h2>Gan Pyraminx M</h2>
+                                <p class="price">$30.99</p>
+                                <p class="description">Pyraminx đầu tiên trên thế giới được trang bị hệ thống định vị từ tính lõi-cạnh độc đáo</p>
+                                <button class="btn-buy">Chi tiết</button>
+                            </div>
+                        </div>
+                    </div>        
+</div>
+
+<div>    
+    <div class="marquee">
+    <div class="marquee-content">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/chess.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:450px">BOARD GAME</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/dice.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:450px">BOARD GAME</div>
+        
+    </div>
+    <div class="marquee-content">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/chess.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:450px">BOARD GAME</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/dice.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:450px">BOARD GAME</div>
+        
+    </div>
+    <div class="marquee-content">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/chess.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:450px">BOARD GAME</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/dice.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:450px">BOARD GAME</div>
+        
+    </div>
+    <div class="marquee-content">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/chess.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:450px">BOARD GAME</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/dice.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:450px">BOARD GAME</div>
+        
+    </div>
+</div>
+</div>
+
+<div class="list">
+    <div class="pricing-container">
+        <div class="pricing-card"
+        data-name="Werewolf Ultimate Extreme" 
+     data-price="99.99$" 
+     data-description="một phiên bản mở rộng và nâng cấp của trò chơi Ultimate Werewolf" 
+     data-description-detail="Ultimate Werewolf Extreme (Ma Sói Ultimate Extreme) là một phiên bản mở rộng và nâng cấp của trò chơi Ultimate Werewolf do Ted Alspach thiết kế và phát hành bởi Bézier Games.
+      Phiên bản này mang đến nhiều cải tiến, vai trò mới và tính năng độc đáo, làm tăng thêm độ phức tạp và thú vị cho trò chơi gốc." 
+     data-image="/productPics/werewolfUlt.png" 
+     data-size="N/a" 
+     data-nsx="N/A"
+     data-type="Board Game"
+        onclick="goToDetailPage(this)">
+            <div class="the_che"></div>
+            <img src="/productPics/werewolfUlt.png" alt="Standard T-Shirt">
+            <div class="content">
+                <h2>Werewolf Ultimate Extreme</h2>
+                <p class="price">$99.99</p>
+                <p class="description">một phiên bản mở rộng và nâng cấp của trò chơi Ultimate Werewolf</p>
+                <button class="btn-buy">Chi tiết</button>
+            </div>
+        </div>
+        </div>
+    <div class="pricing-container">
+            <div class="pricing-card"
+            data-name="Uno No Mercy" 
+     data-price="5.99$" 
+     data-description="NÂNG CẤP TRÒ CHƠI VỚI THẺ BÀI “HUỶ DIỆT” +6 VÀ +10" 
+     data-description-detail="UNO NÂNG CẤP TRÒ CHƠI VỚI THẺ BÀI “HUỶ DIỆT” +6 VÀ +10, BỔ SUNG NHIỀU LUẬT CHƠI KHẮC NGHIỆT: 
+     LOẠI LẬP TỨC NẾU CÓ HƠN 25 LÁ BÀI, ĐỔI BÀI VỚI LÁ SỐ 7. Trong phiên bản lần này, UNO: SHOW 'EM NO MERCY đã bổ sung nhiều thẻ bài mới, nâng tổng số lên 165 thẻ. Đáng chú ý nhất là thẻ đổi màu yêu cầu người tiếp theo phải lấy thêm 6 và 10 lá bài." 
+     data-image="/productPics/unoNomercy.png" 
+     data-size="N/A" 
+     data-nsx="N/A"
+     data-type="Board Game"
+        onclick="goToDetailPage(this)">
+                <div class="the_che"></div>
+                <img src="/productPics/unoNomercy.png" alt="Standard T-Shirt">
+                <div class="content">
+                    <h2>Uno No Mercy</h2>
+                    <p class="price">$5.99</p>
+                    <p class="description">NÂNG CẤP TRÒ CHƠI VỚI THẺ BÀI “HUỶ DIỆT” +6 VÀ +10</p>
+                    <button class="btn-buy">Chi tiết</button>
+                </div>
+            </div>
+            </div>
+    <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Rút gỗ Jenga" 
+                data-price="24.99$" 
+                data-description="Một trò chơi cổ điển, đơn giản nhưng đầy căng thẳng và hấp dẫn" 
+                data-description-detail="Jenga là một trò chơi cổ điển, đơn giản nhưng đầy căng thẳng và hấp dẫn. Người chơi phải rút các thanh gỗ từ tháp và đặt chúng lên đỉnh mà không làm đổ tháp. Jenga không chỉ mang lại niềm vui mà còn giúp rèn luyện kỹ năng phối hợp tay-mắt và sự kiên nhẫn!" 
+                data-image="/productPics/jenga.png" 
+                data-size="N/A" 
+                data-nsx="N/A"
+                data-type="Board Game"
+            onclick="goToDetailPage(this)">
+                    <div class="the_che"></div>
+                    <img src="/productPics/jenga.png" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Rút gỗ Jenga</h2>
+                        <p class="price">$24.99</p>
+                        <p class="description">Một trò chơi cổ điển, đơn giản nhưng đầy căng thẳng và hấp dẫn</p>
+                        <button class="btn-buy">Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Exploding Kittens" 
+                data-price="6.99$" 
+                data-description="Một trò chơi bài vui nhộn" 
+                data-description-detail="Exploding Kittens là một trò chơi bài vui nhộn, nơi người chơi cố gắng sống sót bằng cách tránh bốc phải lá bài "Exploding Kitten" (Mèo nổ). Mục tiêu là trở thành người chơi cuối cùng còn lại trên bàn. Exploding Kittens là lựa chọn tuyệt vời cho các buổi họp mặt gia đình, bạn bè hoặc các bữa tiệc nhỏ!" 
+                data-image="/productPics/explodingKittens.png" 
+                data-size="N/A" 
+                data-nsx="N/A"
+                data-type="Board Game"
+        onclick="goToDetailPage(this)">
+                    <div class="the_che"></div>
+                    <img src="/productPics/explodingKittens.png" alt="Standard T-Shirt">
+                    <div class="content"> 
+                        <h2>Exploding Kittens</h2>
+                        <p class="price">$6.99</p>
+                        <p class="description">Một trò chơi bài vui nhộn</p>
+                        <button class="btn-buy">Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Cờ cá ngựa" 
+     data-price="3.99$" 
+     data-description="Trò chơi gia đình vui nhộn" 
+     data-description-detail="Cờ cá ngựa là một trò chơi gia đình vui nhộn dành cho 2-4 người. Mỗi người chơi điều khiển 4 quân cờ (cá ngựa), xuất phát từ chuồng của mình và cố gắng đưa tất cả chúng về đích trước đối thủ. Người chơi gieo xúc xắc để quyết định số bước đi. Đặc biệt, để đưa ngựa ra khỏi chuồng, người chơi cần đổ xúc xắc ra số 6. Trò chơi kết hợp giữa may mắn và chiến thuật, khi người chơi có thể tính toán để "ăn" quân của đối thủ, buộc họ quay lại chuồng. Sự đơn giản và kịch tính của trò chơi khiến nó trở thành lựa chọn lý tưởng trong các buổi họp mặt gia đình." 
+     data-image="/productPics/caNgua.png" 
+     data-size="N/A" 
+     data-nsx="N/A"
+     data-type="Board Game"
+        onclick="goToDetailPage(this)">
+                    <div class="the_che"></div>
+                    <img src="/productPics/caNgua.png" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Cờ cá ngựa</h2>
+                        <p class="price">$3.99</p>
+                        <p class="description">Trò chơi gia đình vui nhộn</p>
+                        <button class="btn-buy">Chi tiết</button>
+                    </div>
+                </div>
+                </div>
+            <div class="pricing-container">
+                    <div class="pricing-card"
+                    data-name="Bộ cờ vua thi đấu" 
+     data-price="9.99$" 
+     data-description="Một trò chơi trí tuệ lâu đời" 
+     data-description-detail="Cờ vua là một trò chơi trí tuệ lâu đời dành cho hai người chơi, được chơi trên bàn cờ 8x8 gồm 64 ô vuông xen kẽ đen và trắng. Mỗi người điều khiển một tập hợp quân cờ (trắng hoặc đen) bao gồm: vua, hậu, xe, tượng, mã và tốt. Mỗi loại quân có cách di chuyển riêng, đòi hỏi người chơi phải vận dụng chiến thuật để chiếm ưu thế. Mục tiêu là chiếu tướng đối thủ, tức đặt vua của họ vào thế không thể di chuyển an toàn. Trò chơi không chỉ yêu cầu khả năng tư duy chiến lược mà còn cần dự đoán nước đi của đối thủ. Cờ vua thường được chơi ở các giải đấu quốc tế và là biểu tượng của trí tuệ và sự tập trung." 
+     data-image="/productPics/chess.png" 
+     data-size="N/A" 
+     data-nsx="N/A"
+     data-type="Board Game"
+        onclick="goToDetailPage(this)">
+                        <div class="the_che"></div>
+                        <img src="/productPics/chess.png" alt="Standard T-Shirt">
+                        <div class="content">
+                            <h2>Bộ cờ vua thi đấu</h2>
+                            <p class="price">$9.99</p>
+                            <p class="description">Một trò chơi trí tuệ lâu đời</p>
+                            <button class="btn-buy">Chi tiết</button>
+                        </div>
+                    </div>
+                    </div>
+            <div class="pricing-container">
+                        <div class="pricing-card"
+                        data-name="Cờ tỷ phú Monopoly" 
+                        data-price="2.99$" 
+                        data-description="Quản lý tài chính hấp dẫn" 
+                        data-description-detail="Cờ tỷ phú là một trò chơi quản lý tài chính hấp dẫn, nơi 2-8 người chơi cạnh tranh để trở thành người giàu nhất. Bàn cờ được thiết kế với các ô đại diện cho bất động sản, nhà ga, và các sự kiện tài chính như thuế hoặc may mắn. Người chơi lần lượt tung xúc xắc để di chuyển và có thể mua bất động sản nếu hạ cánh vào ô trống. Khi sở hữu bất động sản, họ có thể xây nhà và khách sạn để thu phí thuê từ những người chơi khác. Trò chơi kết thúc khi tất cả đối thủ phá sản. Với sự kết hợp của chiến lược mua bán, quản lý tài sản và một chút may mắn, Monopoly đã trở thành trò chơi nổi tiếng toàn cầu và là biểu tượng của tư duy kinh doanh." 
+                        data-image="/productPics/monopoly.png" 
+                        data-size="N/A" 
+                        data-nsx="N/A"
+                        data-type="Board Game"
+        onclick="goToDetailPage(this)">
+                            <div class="the_che"></div>
+                            <img src="/productPics/monopoly.png" alt="Standard T-Shirt">
+                            <div class="content">
+                                <h2>Cờ tỷ phú Monopoly</h2>
+                                <p class="price">$2.99</p>
+                                <p class="description">Quản lý tài chính hấp dẫn</p>
+                                <button class="btn-buy">Chi tiết</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-container">
+                        <div class="pricing-card"
+                        data-name="Bộ Domino da sáp" 
+                        data-price="49.99$" 
+                        data-description="Một trò chơi truyền thống dành cho 2-4 người hoặc hơn" 
+                        data-description-detail="Domino là một trò chơi truyền thống dành cho 2-4 người hoặc hơn, chơi bằng các quân cờ hình chữ nhật có hai đầu đánh số bằng các chấm tròn từ 0 đến 6 (hoặc cao hơn tùy bộ cờ). Người chơi lần lượt đặt quân cờ sao cho số chấm trên một đầu của quân cờ khớp với số chấm ở đầu quân trên bàn. Nếu không có quân hợp lệ, người chơi phải bỏ lượt hoặc rút thêm quân (tùy luật chơi). Mục tiêu là hết quân cờ trước đối thủ hoặc đạt điểm cao nhất khi trò chơi kết thúc. Domino không chỉ là trò chơi giải trí mà còn rèn luyện khả năng tính toán và sự nhạy bén trong tư duy. Bộ domino da sáp đặc biệt nổi bật với chất liệu bền và cảm giác cầm chắc tay, mang lại trải nghiệm cao cấp cho người chơi." 
+                        data-image="/productPics/domino.png" 
+                        data-size="N/A" 
+                        data-nsx="N/A"
+                        data-type="Board Game"
+        onclick="goToDetailPage(this)">
+                            <div class="the_che"></div>
+                            <img src="/productPics/domino.png" alt="Standard T-Shirt">
+                            <div class="content">
+                                <h2>Bộ Domino da sáp</h2>
+                                <p class="price">$49.99</p>
+                                <p class="description">Một trò chơi truyền thống dành cho 2-4 người hoặc hơn</p>
+                                <button class="btn-buy">Chi tiết</button>
+                            </div>
+                        </div>
+                    </div>        
+</div>
+
+<div>    
+    <div class="marquee">
+    <div class="marquee-content2">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/screw.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:350px">PHỤ KIỆN</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/stopwatch.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:350px">PHỤ KIỆN</div>
+        
+    </div>
+    <div class="marquee-content2">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/screw.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:350px">PHỤ KIỆN</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/stopwatch.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:350px">PHỤ KIỆN</div>
+        
+    </div>
+    <div class="marquee-content2">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/screw.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:350px">PHỤ KIỆN</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/stopwatch.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:350px">PHỤ KIỆN</div>
+        
+    </div>
+    <div class="marquee-content2">
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/screw.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:350px">PHỤ KIỆN</div>
+        <div class="marquee-icon"><img src="/btcuoikitkeweb/pictures/stopwatch.png" height="80px"></div>
+        <div class="marquee-item" style="min-width:350px">PHỤ KIỆN</div>
+        
+    </div>
+</div>
+</div>
+<div class="list">
+    <div class="pricing-container">
+        <div class="pricing-card"
+        data-name="Dầu bôi trơn DNM-37" 
+        data-price="4.99$" 
+        data-description="Dầu bôi trơn (lube) gốc nước được phát triển bởi Cubicle Labs" 
+        data-description-detail="DNM-37 là một loại dầu bôi trơn (lube) gốc nước được phát triển bởi Cubicle Labs, giúp mang lại cảm giác tăng tốc mượt mà và bền lâu cho các loại rubik của bạn. Loại lube này được đặc chế để hấp thụ và giữ ẩm từ không khí, giúp duy trì hiệu quả trong thời gian dài. DNM-37 được thiết kế để hoạt động tốt trên mọi kích thước rubik, bao gồm cả các loại như minxes, square-1 và các dòng rubik lớn." 
+        data-image="/productPics/dnm-37.png" 
+        data-size="N/A" 
+        data-nsx="N/A"
+        data-type="Phụ kiện"
+        onclick="goToDetailPage(this)">
+            <div class="the_che"></div>
+            <img src="/productPics/dnm-37.png" alt="Standard T-Shirt">
+            <div class="content">
+                <h2>Dầu bôi trơn DNM-37</h2>
+                <p class="price">$4.99</p>
+                <p class="description">Dầu bôi trơn (lube) gốc nước được phát triển bởi Cubicle Labs!</p>
+                <button class="btn-buy">Chi tiết</button>
+            </div>
+        </div>
+            </div>
+    <div class="pricing-container">
+            <div class="pricing-card"
+            data-name="Lubicle Black" 
+     data-price="9.99$" 
+     data-description="Dầu bôi trơn gốc kim loại, có độ đặc nhưng ma sát thấp" 
+     data-description-detail="Lubicle Black là một loại dầu bôi trơn gốc kim loại, có độ đặc nhưng ma sát thấp, được phát triển bởi Cubicle Labs. Được thiết kế đặc biệt cho các điểm tiếp xúc kim loại-với-kim loại và kim loại-với-nhựa, Lubicle Black lý tưởng để bôi trơn lõi và phần cứng của rubik. Chỉ cần nhỏ một giọt nhỏ vào đầu mỗi con ốc và đáy của mỗi tâm rubik để tối ưu hóa độ mượt mà và tốc độ mà một loại dầu bôi trơn lõi có thể mang lại!" 
+     data-image="/productPics/blackLube.png" 
+     data-size="N/A" 
+     data-nsx="N/A"
+     data-type="Phụ kiện"
+        onclick="goToDetailPage(this)">
+                <div class="the_che"></div>
+                <img src="/productPics/blackLube.png" alt="Standard T-Shirt">
+                <div class="content">
+                    <h2>Lubicle Black</h2>
+                    <p class="price">$9.99</p>
+                    <p class="description">Dầu bôi trơn gốc kim loại, có độ đặc nhưng ma sát thấp</p>
+                    <button class="btn-buy">Chi tiết</button>
+                </div>
+            </div> 
+            </div>
+    <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Stackmat Pro Timer" 
+     data-price="31.99$" 
+     data-description="Thiết kế cong đặc biệt" 
+     data-description-detail="StackMat Pro Timer Gen4 có thiết kế cong đặc biệt với các cảm biến chạm được đặt nghiêng về phía trung tâm của bộ đếm giờ. Thiết bị sử dụng pin AAA (đi kèm với sản phẩm, hãy tháo dải nhựa trong ngăn chứa pin để bắt đầu sử dụng)." 
+     data-image="/productPics/timer.png" 
+     data-size="N/A" 
+     data-nsx="N/A"
+     data-type="Phụ kiện"
+        onclick="goToDetailPage(this)">
+                    <div class="the_che"></div>
+                    <img src="/productPics/timer.png" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Stackmat Pro Timer</h2>
+                        <p class="price">$31.99</p>
+                        <p class="description">Thiết kế cong đặc biệt</p>
+                        <button class="btn-buy">Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+    <div class="pricing-container">
+        
+                <div class="pricing-card"
+                data-name="Stackmat Cubing Mat" 
+     data-price="13.99$" 
+     data-description="Họa tiết kim loại nổi bật" 
+     data-description-detail="SpeedStacks Gen5 Cubing Mat là tấm thảm nhỏ gọn, phù hợp cho bàn làm việc hoặc khu vực thi đấu. Tấm thảm này có kích thước khoảng 18 x 10 inch và được thiết kế với họa tiết kim loại nổi bật, gồm các hình lục giác và tam giác ở trung tâm. Sản phẩm có các đầu nối và chỉ tương thích với SpeedStacks Gen5 Timer." 
+     data-image="/productPics/mat.png" 
+     data-size="N/A" 
+     data-nsx="N/A"
+     data-type="Phụ kiện"
+        onclick="goToDetailPage(this)">
+                    <div class="the_che"></div>
+                    <img src="/productPics/mat.png" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Stackmat Cubing Mat</h2>
+                        <p class="price">$13.99</p>
+                        <p class="description">Họa tiết kim loại nổi bật</p>
+                        <button class="btn-buy">Chi tiết</button>
+                    </div>
+                </div>
+</div>
+</div>
+
+
+    <div id="footertrang"></div>
+
+    <div>  <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button></div>
+    
+</body>
+</html>

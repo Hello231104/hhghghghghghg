@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <script>
+        function loadHTML(elementId, filePath) {
+           fetch(filePath)
+               .then(response => response.text())
+               .then(data => {
+                   document.getElementById(elementId).innerHTML = data;
+               })
+               .catch(error => console.error('Error loading the file:', error));
+       }
+
+       loadHTML('bodytrang', 'body.html');
+       loadHTML('footertrang','footer.html')
+       loadHTML('headertrang', 'header.html');
+       
+
+   </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá Rubik</title>
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.13/antd.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #FFFFFF;
+            color: #000;
+        }
+
+       
+        
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+       
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+       
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .card-body p {
+            color: #666;
+        }
+        #learn img {
+            width: 100%; 
+            max-width: 300px; 
+            height: auto; 
+            display: block;
+            margin: 10px auto; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+		}
+        
+        
+         #tournaments img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div id="headertrang"></div>
+    </header>
+
+    
+    <div class="container">
+        <!-- Giới thiệu -->
+        <section id="intro">
+            <h2>Rubik là gì?</h2>
+            <p>
+                Rubik hay còn gọi là Khối Rubik là một trò chơi trí tuệ nổi tiếng được phát minh bởi giáo sư Ernő Rubik vào năm 1974, sau đó nó nhanh chóng trở thành một trò chơi giải trí phổ biến toàn cầu nhờ vào lối chơi tuy tưởng chừng như đơn giản nhưng lại vô cùng cuốn hút và mang đầy tính thử thách.<br><br>
+                Đây là một khối lập phương gồm 6 mặt, mỗi mặt có 9 ô vuông nhỏ và có thể xoay để tạo ra hàng triệu cách kết hợp khác nhau và mục tiêu của trò chơi là xoay các mặt của khối sao cho tất cả các ô trên mỗi mặt đều có cùng màu.
+            </p>
+            <h3>Về màu sắc</h3>
+            <p>
+            Mỗi khối Rubik có hình dạng khác nhau sẽ có những màu sắc khác nhau. Thông thường khối Rubik 3x3x3 thường có các màu sắc như đỏ, vàng, cam, trắng, xanh lá cây và xanh dương. Ngoài ra, bên cạnh các khối Rubik nguyên bản còn có các màu khác như hồng, tím, nâu...
+            </p> 
+            <h4>Về hình dạng</h4>
+            <p>Hình dạng của khối Rubik đầu tiên là 3x3x3. Đến ngày nay, đồ chơi Rubik đã có thêm nhiều hình dạng như 2x2x2, 4x4x4, 5x5x5. Bên cạnh đó, đồ chơi Rubik còn có có hình dạng đặc biệt khác như hình tam giác, hình tròn, tứ diện, bát diện hay khối 12 mặt, khối 20 mặt...
+            </p>
+        </section>
+        
+        <!-- Hình ảnh -->
+        <section id="gallery">
+        <h2>Các loại rubik phổ biến</h2>
+           <div class="cards">
+        <div class="card">
+            <img src="https://rubikstore.vn/cdn/images/202202/goods_img/rubik-gan-356-rs-stickerless-3x3x3-sp004254-G765-1645901657754.jpg" alt="Rubik 3x3x3">
+            <div class="card-body">
+                <h3>Rubik 3x3x3</h3>
+                <p>Là đồ chơi Rubik cổ điển được phát minh bởi giáo sư kiến trúc, nhà điêu khắc Ernõ Rubik. Mỗi khối Rubik này bao gồm 26 khối nhỏ ghép lại. Đồ chơi Rubik này được đánh giá là dễ chơi. Đây cũng là loại Rubik phổ biến và bán rất chạy hiện nay.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://bizweb.dktcdn.net/100/316/286/files/19-7c2ea2f8-fd0c-4acd-8ecd-642474749b3d.jpg?v=1581005711587" alt="Rubik 2x2x2">
+            <div class="card-body">
+                <h3>Rubik 2x2x2</h3>
+                <p>Đây là đồ chơi Rubik bỏ túi, được ra đời vào năm 1970 bởi Larry Nichols. Rubik 2x2x2 có cấu tạo đơn giản với 8 khối góc. Cách chơi đơn giản và nhanh gọn hơn nhiều so với Rubik 3x3x3.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://product.hstatic.net/1000319165/product/dk81086_03-min_7c357d421b404853a0bd0fb37476f9e1_master.jpg" alt="Rubik 5x5x5">
+            <div class="card-body">
+                <h3>Rubik 5x5x5</h3>
+                <p>Khối Rubik nâng cao cải tiến từ phiên bản cổ điển 3x3x3, đòi hỏi kỹ thuật và chiến lược giải phức tạp hơn.</p>
+            </div>
+        </div>
+    </div>
+        </section>
+
+        <!-- Lợi ích -->
+        <section id="benefits">
+            <h2>Lợi ích khi chơi Rubik</h2>
+            <div class="cards">
+                <div class="card">
+                   <img src="https://lh7-us.googleusercontent.com/Fm1D3piOvJoSOw0W0Vclm3ipIniCJc5kMMSds4gRcjQObOVTdNXxLWFM2nV8JV3oQrfPArMrhIlCNyoHzcBnPgCJcOrCpMPbOZE2tPDogN9Q6MV8Nkf7g1frnf5e6ApEQLvzR5QwbHn-scqkqr6ZFV4" alt="Tư duy">
+                    <div class="card-body">
+                        <h3>Cải thiện tư duy logic</h3>
+                        <p>Rubik giúp bạn phát triển khả năng phân tích và giải quyết vấn đề hiệu quả.</p>
+                    </div>
+                </div>
+                <div class="card">
+                   <img src="https://cdn.popsww.com/blog-kids-learn/sites/3/2022/04/hoc-rubik.jpg" alt="Tập trung">
+                    <div class="card-body">
+                        <h3>Tăng cường tập trung</h3>
+                        
+                        <p>Quá trình giải Rubik đòi hỏi sự tập trung cao độ và kiên nhẫn.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.tgdd.vn//News/1442530//XamVangDoHiendaiNetnguechngoacSukienNenVideo(15)-845x475.png" alt="Giam CT">
+                    <div class="card-body">
+                        <h3>Giảm căng thẳng</h3>
+                        
+ 						
+                        <p>Chơi Rubik là cách giải trí lành mạnh và giúp giảm căng thẳng sau giờ làm việc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Học cách giải -->
+        <section id="learn">
+    <h2>Học cách giải Rubik</h2>
+    <p>
+        Giải Rubik là một quá trình đầy thú vị và thách thức, phù hợp với mọi lứa tuổi. Bạn có thể bắt đầu từ những kỹ thuật cơ bản và dần nâng cao trình độ của mình.
+    </p>
+    <h3>Các bước cơ bản để giải Rubik 3x3x3:</h3>
+    <ul>
+        <li><strong>Bước 1:</strong> Tạo dấu cộng trắng (White Cross) bằng cách ghép các cạnh màu trắng vào đúng vị trí.</li>
+         <img src="https://lh3.googleusercontent.com/vMSLV4MummW-tazt5A2XPrsokN0H-CS8m3jr6X0DY_-jw2IjDPTk-TvIk9RHlogOpCcMEt6E2CiMIErInVsJFbEAcVNKFyz5m1MFgEuilsVU4138LCnv8zYA1tJ239TrO5NPI5Rhqqrs_1kD" alt="B1">
+        <li><strong>Bước 2:</strong> Hoàn thiện mặt trắng bằng cách sắp xếp các góc trắng đúng vị trí.</li>
+        <img src="https://lh6.googleusercontent.com/JueDzjemG-pxR4co_135BcxkqPhjVC7ojys4EweIJCKvGyZChZmLdtZOmJDKedTzuwl6lrybqG5Qhn52zrE0p7we9OfiOaPu6O1p-_qQg4RX8JCtDOxcW0Dvo6mEs3zEkafv5JEqZhNH9wc9" alt="B2">
+        <li><strong>Bước 3:</strong> Giải tầng hai (Middle Layer) bằng cách di chuyển các viên cạnh vào đúng vị trí.</li>
+         <img src="https://lh4.googleusercontent.com/q3uImFzkdbQtXWr4JTt4NHdUSUF6rH8Xs46Y8lSEGxbCezqI4cFaywWVPHm4L3lR9fdPwvS0up8XGeKQI780_XkDeMgtVhvMp9HydSnYYIBnQOcU3LYVYvJWjqG-6GqVG79vRGvxVkISt_vb" alt="B3">
+        <li><strong>Bước 4:</strong> Tạo dấu cộng vàng (Yellow Cross) trên mặt trên cùng bằng thuật toán cụ thể.</li>
+        <img src="https://lh3.googleusercontent.com/uwY8a6AQXPP0Q_PQrLdCHM5H9lRlnyidH6PJBvkgKkb6dx99gfNJhbJiSUSuJGIPy7VGMvxGd4cstJXfvqnvQn06z_WrWAi-Ef4wFfk4Bw6x0OsLODZn-d8R3VO1Rm0V-SyVyUvJtRoUXUEy" alt="B4">
+        <li><strong>Bước 5:</strong> Đưa các cạnh vàng về đúng vị trí so với tâm của các mặt.</li>
+        <img src="https://lh3.googleusercontent.com/Cxa-t5cXbTdHaWc0_3rnDw0GIs6Q066gEnMT92WuB3jSVnbF8_iKws32xSSNY41wu4sMdfbbFY2W-Y5M3ZpzeaUKSF8zAiP_CmYFiaEqzFHVOnc0_xFF0bCHXF0GH-r_-kmsTkgymX-az5-G" alt="B5">
+                
+        <li><strong>Bước 6:</strong> Sắp xếp các góc vàng và hoàn thiện Rubik.</li>
+    </ul>
+     <img src="https://lh6.googleusercontent.com/ISggqztjKljGDFXNXMnvntdhCxyFchVxGzCBaxdn4Al3-BNv67cUd-mkCaCknOdiJ8EebyILLKcGtTV-6ojVDyO_whfK3jkNz4vBtll_wMkHufMMgLUCnC2ytDZj0M1sfacf9d2Nn6tjYPAg" alt="WCA">
+    <h3>Học qua các nguồn tài liệu:</h3>
+    <ul>
+        <li>Hướng dẫn chi tiết từ cơ bản đến nâng cao:<a href="https://www.rubiks.com" target="_blank">https://www.rubiks.com</a></li>
+        <li>Video hướng dẫn trên YouTube:<a href="https://www.youtube.com/watch?v=q_ZAmUVX8vM" target="_blank">https://www.youtube.com/watch</a> </li>
+        <li>Sách hướng dẫn:<a href="https://speedcubeshop.com/products/qiyi-secret-tutorial-book?srsltid=AfmBOoppl1JCnzMZLJ5SUgpnkfl7dlavJ9nBW7ifO2dFvX2BsYNN_2lx" target="_blank">https://speedcubeshop.com/products/qiyi-secret-tutorial-book</a> </li>
+    </ul>
+   
+</section>
+
+        <!-- Hệ thống giải đấu -->
+        <section id="tournaments">
+            <h2>Hệ thống giải đấu Rubik</h2>
+            <p>Rubik không chỉ là trò chơi trí tuệ mà còn là môn thể thao với nhiều giải đấu hấp dẫn. Dưới đây là đơn vị tổ chức và một số giải đấu nổi bật:</p>
+            <ul>
+                <li><strong>World Cube Association (WCA):</strong> Tổ chức chính thức của các giải đấu Rubik trên toàn cầu. Các sự kiện như Giải vô địch thế giới và các giải đấu khu vực được tổ chức thường xuyên.</li>
+                 <img src="https://assets.worldcubeassociation.org/assets/2a573bd/packs/static/components/StaticPages/LogoImages/WCA%20Lockup%20Positive%20Primary-145f869bd2b5a2bd855b.svg" alt="WCA">
+                <li><strong>Rubik’s Cube World Championship:</strong> Giải đấu lớn nhất thế giới, quy tụ các cao thủ từ khắp nơi để tranh tài.</li>
+                <img src="https://media.npr.org/assets/img/2015/07/19/fullsizerender_wide-fac7e733b2e82127cb199aabb752264a8089bd90.jpg?s=1100&c=85&f=webp" alt="WCS">
+                
+                <li><strong>Giải đấu địa phương:</strong> Nhiều giải đấu cấp quốc gia hoặc khu vực như WCA Vietnam Open và cả những giải đấu do cộng đồng tự tổ chức cũng thu hút nhiều người chơi tài năng và góp phần quảng bá bộ môn rubick.</li>
+            </ul>
+            <br>
+            
+            <p>Bạn có thể theo dõi các sự kiện này trên: <a href="https://www.worldcubeassociation.org" target="_blank">https://www.worldcubeassociation.org</a></p>
+        </section>
+    </div>
+
+    <div id="footertrang"></div>
+</body>
+</html>

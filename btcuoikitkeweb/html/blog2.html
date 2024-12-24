@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik</title>
+    <script>
+        function loadHTML(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the file:', error));
+        }
+
+        loadHTML('bodytrang', 'body.html');
+        loadHTML('footertrang','footer.html')
+        loadHTML('headertrang', 'header.html');
+        
+    </script>
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/blog.css">
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/style.css">
+    <link rel="stylesheet" href="/btcuoikitkeweb/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.13/antd.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+         <div id="headertrang"></div>
+    </header>
+    <div class="container">
+        <div class="card" id="card1">
+            <h3>Đang tải...</h3>
+            <p>Đang tải nội dung...</p>
+            <a href="https://rubikonline.vn/tranh-luan-giua-giai-dau-vo-dich-the-gioi-cua-red-bull-va-wca" target="_blank">Xem chi tiết</a>
+        </div>
+        <div class="card" id="card2">
+            <h3>Đang tải...</h3>
+            <p>Đang tải nội dung...</p>
+            <a href="https://rubikonline.vn/cach-choi-rubik-3x3-de-hieu-nhat" target="_blank">Xem chi tiết</a>
+        </div>
+        <div class="card" id="card3">
+            <h3>Đang tải...</h3>
+            <p>Đang tải nội dung...</p>
+            <a href="https://rubikonline.vn/cach-giai-rubik-4x4" target="_blank">Xem chi tiết</a>
+        </div>
+        <div class="card" id="card4">
+            <h3>Đang tải...</h3>
+            <p>Đang tải nội dung...</p>
+            <a href="https://rubikonline.vn/danh-gia-gan-monster-go" target="_blank">Xem chi tiết</a>
+        </div>
+    </div>
+    
+    
+    
+    <script>
+         const cards = [
+            { id: "card1", url: "https://rubikonline.vn/tranh-luan-giua-giai-dau-vo-dich-the-gioi-cua-red-bull-va-wca" },
+            { id: "card2", url: "https://rubikonline.vn/cach-choi-rubik-3x3-de-hieu-nhat" },
+            { id: "card3", url: "https://rubikonline.vn/cach-giai-rubik-4x4" },
+            { id: "card4", url: "https://rubikonline.vn/danh-gia-gan-monster-go" }
+        ];
+
+        const cache = new Map();
+
+        function fetchWithCache(url) {
+            if (cache.has(url)) return Promise.resolve(cache.get(url));
+            return fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`)
+                .then(response => response.json())
+                .then(data => {
+                    cache.set(url, data);
+                    return data;
+                });
+        }
+
+        function updateCardContent(cardId, title, description) {
+            const card = document.getElementById(cardId);
+            if (card) {
+                card.querySelector('h3').textContent = title;
+                card.querySelector('p').textContent = description;
+            }
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const { id, url } = cards.find(card => card.id === entry.target.id);
+                    fetchWithCache(url)
+                        .then(data => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(data.contents, "text/html");
+                            const title = doc.querySelector("title")?.textContent || "Không có tiêu đề";
+                            const description = doc.querySelector('meta[name="description"]')?.content || "Không có mô tả.";
+                            updateCardContent(id, title, description);
+                        })
+                        .catch(error => console.error("Lỗi khi tải nội dung:", error));
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        document.querySelectorAll('.card').forEach(card => observer.observe(card));
+
+    </script>
+<div id="footertrang"></div>
+</body>
+</html>
